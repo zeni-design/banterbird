@@ -1,6 +1,18 @@
 [
     {
         "username": "admin",
+        "message": "hey"
+    },
+    {
+        "username": "admin",
+        "message": "whats up?\n"
+    },
+    {
+        "username": "admin",
+        "message": "hello"
+    },
+    {
+        "username": "admin",
         "message": "hey\n"
     },
     {

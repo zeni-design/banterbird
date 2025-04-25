@@ -44,3 +44,20 @@ window.onload = async () => {
     console.error("Error fetching posts:", error);
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  body.classList.add(savedTheme);
+  toggle.checked = savedTheme === 'dark';
+
+  toggle.addEventListener('change', () => {
+      const newTheme = toggle.checked ? 'dark' : 'light';
+      body.classList.remove('light', 'dark');
+      body.classList.add(newTheme);
+      localStorage.setItem('theme', newTheme);
+  });
+});

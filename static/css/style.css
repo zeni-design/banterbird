@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #d6aadf;
+    --text-color: #000;
+    --border-color: #c418a7;
+}
+
+body.light {
+    --bg-color: #d6aadf;
+    --text-color: #000;
+    --border-color: #c418a7;
+}
+
+body.dark {
+    --bg-color: #1e1e2f;
+    --text-color: #f1f1f1;
+    --border-color: #ff69b4;
+}
+
+body {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#feed {
+    margin-top: 15px;
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+textarea {
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
